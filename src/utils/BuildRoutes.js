@@ -5,6 +5,14 @@ export default class BuildRoutes {
   }
 
   build(routes){
+    if(!routes) return app.error(`Param 'routes' is undefined`);
+
+    routes.forEach((route) => {
+      this.app[route.method](route.path, (req, res) => {
+        this.app.controllers[route.controller][route.function](req, res);
+      })
+      this.app.debug(`[+] Route ${route.path}`)
+    })
 
   }
 }
