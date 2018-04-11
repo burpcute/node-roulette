@@ -33,7 +33,7 @@ export default class App extends Component {
     return (
       <Row>
         <Col span={2}><Button ghost className="GREEN">0</Button></Col>
-        <Col span={22}>
+        <Col span={20}>
           {
             this.state.structure.map(line => {
               return (
@@ -54,6 +54,17 @@ export default class App extends Component {
             <Col span={8}><Button className="bottom-dozen">Second 1/12</Button></Col>
             <Col span={8}><Button className="bottom-dozen">Third 1/12</Button></Col>
           </Row>
+        </Col>
+        <Col span={2} className="right-dozens">
+            <Row>
+              <Col span={24}><Button className="right-dozen">2:1</Button></Col>
+            </Row>
+            <Row>
+              <Col span={24}><Button className="right-dozen">2:1</Button></Col>
+            </Row>
+            <Row>
+              <Col span={24}><Button className="right-dozen">2:1</Button></Col>
+            </Row>
         </Col>
       </Row>
     );

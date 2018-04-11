@@ -20,6 +20,7 @@ body {
 
 .GREEN {
   background-color: #26A65B !important;
+  height: 12em;
 }
 
 .BLACK {
@@ -43,4 +44,18 @@ body {
 
 .ant-btn:focus {
   color: white;
+}
+
+.right-dozens {
+  flex-direction: column;
+}
+
+.right-dozen {
+  height: 4em;
+  background-color: #52B3D9;
+}
+
+.right-dozen:focus {
+  color: rgba(0, 0, 0, 0.65) !important;
+  background-color: #52B3D9;
 }
