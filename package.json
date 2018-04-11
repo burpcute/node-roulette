@@ -13,6 +13,7 @@
   "dependencies": {
     "chalk": "^2.3.2",
     "consign": "^0.1.6",
+    "cors": "^2.8.4",
     "express": "^4.16.3",
     "moment": "^2.22.0"
   },

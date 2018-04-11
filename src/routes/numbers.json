@@ -1,0 +1,8 @@
+[
+  {
+    "path": "/numbers",
+    "method": "get",
+    "controller": "numbers",
+    "function": "routeGetNumbers"
+  }
+]

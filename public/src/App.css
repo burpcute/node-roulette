@@ -1,0 +1,46 @@
+body {
+  font-family: 'Montserrat';
+}
+
+.ant-layout-content {
+  padding: 5em;
+}
+
+.ant-btn {
+  flex: 1;
+  border-radius: 0;
+  border: none;
+  height: 4em;
+  font-size: 20px;
+}
+
+.ant-col-2 {
+  display: flex;
+}
+
+.GREEN {
+  background-color: #26A65B !important;
+}
+
+.BLACK {
+  background-color: #222 !important;
+}
+
+.RED {
+  background-color: #96281B !important;
+}
+
+.bottom-dozen {
+  height: 2.5em;
+  width: 100%;
+  background-color: #52B3D9;
+}
+
+.bottom-dozen:focus {
+  color: rgba(0, 0, 0, 0.65) !important;
+  background-color: #52B3D9;
+}
+
+.ant-btn:focus {
+  color: white;
+}

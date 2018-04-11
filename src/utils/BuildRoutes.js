@@ -9,6 +9,7 @@ export default class BuildRoutes {
 
     routes.forEach((route) => {
       this.app[route.method](route.path, (req, res) => {
+        this.app.info(`[${route.method.toUpperCase()} ${route.path}]`)
         this.app.controllers[route.controller][route.function](req, res);
       })
       this.app.debug(`[+] Route ${route.path}`)
