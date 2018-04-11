@@ -1,0 +1,8 @@
+[
+  {
+    "path": "/",
+    "method": "get",
+    "controller": "main",
+    "function": "routeMain"
+  }
+]
