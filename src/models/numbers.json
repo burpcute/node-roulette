@@ -2,182 +2,182 @@
   {
     "number": "1",
     "groups": {
-      "american": ["FIRST_1/12_HORIZONTAL", "FIRST_1/12_VERTICAL", "1-18", "ODD", "RED"]
+      "european": ["FIRST_1/12_HORIZONTAL", "FIRST_1/12_VERTICAL", "1-18", "ODD", "RED"]
     }
   },{
     "number": "2",
     "groups": {
-      "american": ["FIRST_1/12_HORIZONTAL", "SECOND_1/12_VERTICAL", "1-18", "EVEN", "BLACK"]
+      "european": ["FIRST_1/12_HORIZONTAL", "SECOND_1/12_VERTICAL", "1-18", "EVEN", "BLACK"]
     }
   },{
     "number": "3",
     "groups": {
-      "american": ["FIRST_1/12_HORIZONTAL", "THIRD_1/12_VERTICAL", "1-18", "ODD", "RED"]
+      "european": ["FIRST_1/12_HORIZONTAL", "THIRD_1/12_VERTICAL", "1-18", "ODD", "RED"]
     }
   },{
     "number": "4",
     "groups": {
-      "american": ["FIRST_1/12_HORIZONTAL", "FIRST_1/12_VERTICAL", "1-18", "EVEN", "BLACK"]
+      "european": ["FIRST_1/12_HORIZONTAL", "FIRST_1/12_VERTICAL", "1-18", "EVEN", "BLACK"]
     }
   },{
     "number": "5",
     "groups": {
-      "american": ["FIRST_1/12_HORIZONTAL", "SECOND_1/12_VERTICAL", "1-18", "ODD", "RED"]
+      "european": ["FIRST_1/12_HORIZONTAL", "SECOND_1/12_VERTICAL", "1-18", "ODD", "RED"]
     }
   },{
     "number": "6",
     "groups": {
-      "american": ["FIRST_1/12_HORIZONTAL", "THIRD_1/12_VERTICAL", "1-18", "EVEN", "BLACK"]
+      "european": ["FIRST_1/12_HORIZONTAL", "THIRD_1/12_VERTICAL", "1-18", "EVEN", "BLACK"]
     }
   },{
     "number": "7",
     "groups": {
-      "american": ["FIRST_1/12_HORIZONTAL", "FIRST_1/12_VERTICAL", "1-18", "ODD", "RED"]
+      "european": ["FIRST_1/12_HORIZONTAL", "FIRST_1/12_VERTICAL", "1-18", "ODD", "RED"]
     }
   },{
     "number": "8",
     "groups": {
-      "american": ["FIRST_1/12_HORIZONTAL", "SECOND_1/12_VERTICAL", "1-18", "EVEN", "BLACK"]
+      "european": ["FIRST_1/12_HORIZONTAL", "SECOND_1/12_VERTICAL", "1-18", "EVEN", "BLACK"]
     }
   },{
     "number": "9",
     "groups": {
-      "american": ["FIRST_1/12_HORIZONTAL", "THIRD_1/12_VERTICAL", "1-18", "ODD", "RED"]
+      "european": ["FIRST_1/12_HORIZONTAL", "THIRD_1/12_VERTICAL", "1-18", "ODD", "RED"]
     }
   },{
     "number": "10",
     "groups": {
-      "american": ["FIRST_1/12_HORIZONTAL", "FIRST_1/12_VERTICAL", "1-18", "EVEN", "BLACK"]
+      "european": ["FIRST_1/12_HORIZONTAL", "FIRST_1/12_VERTICAL", "1-18", "EVEN", "BLACK"]
     }
   },{
     "number": "11",
     "groups": {
-      "american": ["FIRST_1/12_HORIZONTAL", "SECOND_1/12_VERTICAL", "1-18", "ODD", "BLACK"]
+      "european": ["FIRST_1/12_HORIZONTAL", "SECOND_1/12_VERTICAL", "1-18", "ODD", "BLACK"]
     }
   },{
     "number": "12",
     "groups": {
-      "american": ["FIRST_1/12_HORIZONTAL", "THIRD_1/12_VERTICAL", "1-18", "EVEN", "RED"]
+      "european": ["FIRST_1/12_HORIZONTAL", "THIRD_1/12_VERTICAL", "1-18", "EVEN", "RED"]
     }
   },{
     "number": "13",
     "groups": {
-      "american": ["SECOND_1/12_HORIZONTAL", "FIRST_1/12_VERTICAL", "1-18", "ODD", "BLACK"]
+      "european": ["SECOND_1/12_HORIZONTAL", "FIRST_1/12_VERTICAL", "1-18", "ODD", "BLACK"]
     }
   },{
     "number": "14",
     "groups": {
-      "american": ["SECOND_1/12_HORIZONTAL", "SECOND_1/12_VERTICAL", "1-18", "EVEN", "RED"]
+      "european": ["SECOND_1/12_HORIZONTAL", "SECOND_1/12_VERTICAL", "1-18", "EVEN", "RED"]
     }
   },{
     "number": "15",
     "groups": {
-      "american": ["SECOND_1/12_HORIZONTAL", "THIRD_1/12_VERTICAL", "1-18", "ODD", "BLACK"]
+      "european": ["SECOND_1/12_HORIZONTAL", "THIRD_1/12_VERTICAL", "1-18", "ODD", "BLACK"]
     }
   },{
     "number": "16",
     "groups": {
-      "american": ["SECOND_1/12_HORIZONTAL", "FIRST_1/12_VERTICAL", "1-18", "EVEN", "RED"]
+      "european": ["SECOND_1/12_HORIZONTAL", "FIRST_1/12_VERTICAL", "1-18", "EVEN", "RED"]
     }
   },{
     "number": "17",
     "groups": {
-      "american": ["SECOND_1/12_HORIZONTAL", "SECOND_1/12_VERTICAL", "1-18", "ODD", "BLACK"]
+      "european": ["SECOND_1/12_HORIZONTAL", "SECOND_1/12_VERTICAL", "1-18", "ODD", "BLACK"]
     }
   },{
     "number": "18",
     "groups": {
-      "american": ["SECOND_1/12_HORIZONTAL", "THIRD_1/12_VERTICAL", "1-18", "EVEN", "RED"]
+      "european": ["SECOND_1/12_HORIZONTAL", "THIRD_1/12_VERTICAL", "1-18", "EVEN", "RED"]
     }
   },{
     "number": "19",
     "groups": {
-      "american": ["SECOND_1/12_HORIZONTAL", "FIRST_1/12_VERTICAL", "19-36", "ODD", "RED"]
+      "european": ["SECOND_1/12_HORIZONTAL", "FIRST_1/12_VERTICAL", "19-36", "ODD", "RED"]
     }
   },{
     "number": "20",
     "groups": {
-      "american": ["SECOND_1/12_HORIZONTAL", "SECOND_1/12_VERTICAL", "19-36", "EVEN", "BLACK"]
+      "european": ["SECOND_1/12_HORIZONTAL", "SECOND_1/12_VERTICAL", "19-36", "EVEN", "BLACK"]
     }
   },{
     "number": "21",
     "groups": {
-      "american": ["SECOND_1/12_HORIZONTAL", "THIRD_1/12_VERTICAL", "19-36", "ODD", "RED"]
+      "european": ["SECOND_1/12_HORIZONTAL", "THIRD_1/12_VERTICAL", "19-36", "ODD", "RED"]
     }
   },{
     "number": "22",
     "groups": {
-      "american": ["SECOND_1/12_HORIZONTAL", "FIRST_1/12_VERTICAL", "19-36", "EVEN", "BLACK"]
+      "european": ["SECOND_1/12_HORIZONTAL", "FIRST_1/12_VERTICAL", "19-36", "EVEN", "BLACK"]
     }
   },{
     "number": "23",
     "groups": {
-      "american": ["SECOND_1/12_HORIZONTAL", "SECOND_1/12_VERTICAL", "19-36", "ODD", "RED"]
+      "european": ["SECOND_1/12_HORIZONTAL", "SECOND_1/12_VERTICAL", "19-36", "ODD", "RED"]
     }
   },{
     "number": "24",
     "groups": {
-      "american": ["SECOND_1/12_HORIZONTAL", "THIRD_1/12_VERTICAL", "19-36", "EVEN", "BLACK"]
+      "european": ["SECOND_1/12_HORIZONTAL", "THIRD_1/12_VERTICAL", "19-36", "EVEN", "BLACK"]
     }
   },{
     "number": "25",
     "groups": {
-      "american": ["THIRD_1/12_HORIZONTAL", "FIRST_1/12_VERTICAL", "19-36", "ODD", "RED"]
+      "european": ["THIRD_1/12_HORIZONTAL", "FIRST_1/12_VERTICAL", "19-36", "ODD", "RED"]
     }
   },{
     "number": "26",
     "groups": {
-      "american": ["THIRD_1/12_HORIZONTAL", "SECOND_1/12_VERTICAL", "19-36", "EVEN", "BLACK"]
+      "european": ["THIRD_1/12_HORIZONTAL", "SECOND_1/12_VERTICAL", "19-36", "EVEN", "BLACK"]
     }
   },{
     "number": "27",
     "groups": {
-      "american": ["THIRD_1/12_HORIZONTAL", "THIRD_1/12_VERTICAL", "19-36", "ODD", "RED"]
+      "european": ["THIRD_1/12_HORIZONTAL", "THIRD_1/12_VERTICAL", "19-36", "ODD", "RED"]
     }
   },{
     "number": "28",
     "groups": {
-      "american": ["THIRD_1/12_HORIZONTAL", "FIRST_1/12_VERTICAL", "19-36", "EVEN", "BLACK"]
+      "european": ["THIRD_1/12_HORIZONTAL", "FIRST_1/12_VERTICAL", "19-36", "EVEN", "BLACK"]
     }
   },{
     "number": "29",
     "groups": {
-      "american": ["THIRD_1/12_HORIZONTAL", "SECOND_1/12_VERTICAL", "19-36", "ODD", "BLACK"]
+      "european": ["THIRD_1/12_HORIZONTAL", "SECOND_1/12_VERTICAL", "19-36", "ODD", "BLACK"]
     }
   },{
     "number": "30",
     "groups": {
-      "american": ["THIRD_1/12_HORIZONTAL", "THIRD_1/12_VERTICAL", "19-36", "EVEN", "RED"]
+      "european": ["THIRD_1/12_HORIZONTAL", "THIRD_1/12_VERTICAL", "19-36", "EVEN", "RED"]
     }
   },{
     "number": "31",
     "groups": {
-      "american": ["THIRD_1/12_HORIZONTAL", "FIRST_1/12_VERTICAL", "19-36", "ODD", "BLACK"]
+      "european": ["THIRD_1/12_HORIZONTAL", "FIRST_1/12_VERTICAL", "19-36", "ODD", "BLACK"]
     }
   },{
     "number": "32",
     "groups": {
-      "american": ["THIRD_1/12_HORIZONTAL", "SECOND_1/12_VERTICAL", "19-36", "EVEN", "RED"]
+      "european": ["THIRD_1/12_HORIZONTAL", "SECOND_1/12_VERTICAL", "19-36", "EVEN", "RED"]
     }
   },{
     "number": "33",
     "groups": {
-      "american": ["THIRD_1/12_HORIZONTAL", "THIRD_1/12_VERTICAL", "19-36", "ODD", "BLACK"]
+      "european": ["THIRD_1/12_HORIZONTAL", "THIRD_1/12_VERTICAL", "19-36", "ODD", "BLACK"]
     }
   },{
     "number": "34",
     "groups": {
-      "american": ["THIRD_1/12_HORIZONTAL", "FIRST_1/12_VERTICAL", "19-36", "EVEN", "RED"]
+      "european": ["THIRD_1/12_HORIZONTAL", "FIRST_1/12_VERTICAL", "19-36", "EVEN", "RED"]
     }
   },{
     "number": "35",
     "groups": {
-      "american": ["THIRD_1/12_HORIZONTAL", "SECOND_1/12_VERTICAL", "19-36", "ODD", "BLACK"]
+      "european": ["THIRD_1/12_HORIZONTAL", "SECOND_1/12_VERTICAL", "19-36", "ODD", "BLACK"]
     }
   },{
     "number": "36",
     "groups": {
-      "american": ["THIRD_1/12_HORIZONTAL", "THIRD_1/12_VERTICAL", "19-36", "EVEN", "RED"]
+      "european": ["THIRD_1/12_HORIZONTAL", "THIRD_1/12_VERTICAL", "19-36", "EVEN", "RED"]
     }
   }
 ]
