@@ -29,11 +29,16 @@ export default class App extends Component {
           {
             this.state.structure.map(line => {
               return (
-                <Row>
+                <Row key={line}>
                   {
                     line.map(number => {
                       return (
-                        <Col span={2}><Button ghost className={this.getClass(number)} onClick={() => this.props.onPick(number)}>{number}</Button></Col>
+                        <Col key={number} span={2}><Button ghost className={this.getClass(number)} onClick={() => this.props.onPick(number)}> 
+                          {number} 
+                          {this.props.picked.filter(n => n.number == number).length && this.props.picked.filter(n => n.number == number)[0].value > 0 &&
+                            <p className="money">{this.props.picked.filter(n => n.number == number)[0].value}</p>
+                          }
+                        </Button></Col>
                       )
                     })
                   }

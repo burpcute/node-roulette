@@ -5,8 +5,8 @@ import axios from 'axios'
 
 import Roulette from './components/roulette'
 
-import { Layout } from 'antd';
-const { Sider, Content } = Layout;
+import { Layout, Button } from 'antd';
+const { Content } = Layout;
 
 export default class App extends Component {
 
@@ -16,7 +16,6 @@ export default class App extends Component {
       dataStructure: null,
       picked: [],
       playerBudget: 100,
-      bet: 0,
       roulletteBudget: 1000
     }
   }
@@ -25,26 +24,44 @@ export default class App extends Component {
     axios.get('http://localhost:8080/numbers')
       .then(numbers => this.setState({dataStructure: numbers.data}))
       .catch((err) => alert('Error ao buscar os números!' + JSON.stringify(err)))
+
+    //Gerar array inicial de numeros selecionados
+    const picked =  Array.from(Array(37).keys()).map(number => {
+      return {number: number, value: 0}
+    })
+
+    this.setState({picked})
+
   }
+
+  getBet = () => this.state.picked.reduce((memo, item) => memo += item.value, 0)
   
   render() {
     return (
       <Layout>
         <Layout>
-          
-          <Sider>
-            {this.state.picked.map((pick) => {
-              return (
-                <span>{pick}</span>
-              )
-            })}
-          </Sider>
-          
+
           <Content>
+            <Button className="btn-reset" type="dashed" onClick={this.clearBet}>RESET BET</Button>
+
             <Roulette 
               onPick={this.onPick}
               dataStructure={this.state.dataStructure}
+              picked={this.state.picked}
             />
+            
+            <div className="data-game">
+              <p className="data-game-label">
+                Bet: {this.getBet()}
+              </p>
+              <p className="data-game-label">
+                Player Budge: {this.state.playerBudget}
+              </p>
+              <p className="data-game-label">
+                Roulette Budge: {this.state.roulletteBudget}
+              </p>
+            </div>
+
           </Content>
 
         </Layout>
@@ -52,19 +69,65 @@ export default class App extends Component {
     );
   }
 
+  clearBet = () => {
+    const picked =  Array.from(Array(37).keys()).map(number => {
+      return {number: number, value: 0}
+    })
+
+    this.setState({
+      playerBudget: this.state.playerBudget + this.getBet(),
+      picked
+    })
+  }
+
   onPick = (cat) => {
+    
     if(typeof cat === 'number'){
+      if(this.getBet() >= 100) return;
+      if(this.state.playerBudget == 0) return;
+
       this.setState({
-        picked: [...this.state.picked, cat]
+        playerBudget: this.state.playerBudget - 1
       })
-    } else {
-      const numbers = this.state.dataStructure
-        .filter((number) => number.groups.european.includes(cat))
-        .map((number) => number.number)
       
-      this.setState({
-        picked: [...this.state.picked, ...numbers]
+      const newPicked = this.state.picked.map(x => {
+        if(x.number == cat){
+          return {number: x.number, value: x.value + 1}
+        } else {
+          return x
+        }
       })
+
+      this.setState({
+        picked: newPicked
+      })
+
+    } else {
+      const picked = this.state.dataStructure
+        .filter((number) => number.groups.european.includes(cat))
+        .map((number) => parseInt(number.number))
+
+      if(this.getBet() + picked.length >= 100) return;
+      if(this.state.playerBudget - picked.length < 0) return;
+
+      this.setState({
+        playerBudget: this.state.playerBudget - picked.length
+      })
+        
+      const newPicked = this.state.picked.map(pickedState => {
+        
+        if(picked.includes(parseInt(pickedState.number))){
+          return { number: pickedState.number, value: pickedState.value + 1 }
+        } else {
+          return pickedState
+        }
+
+      })
+
+      this.setState({
+        picked: newPicked
+      })
+
     }
   }
 
