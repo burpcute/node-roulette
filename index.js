@@ -2,6 +2,7 @@ import express from 'express'
 import cors from 'cors'
 import chalk from 'chalk'
 import consign from 'consign'
+import bodyParser from 'body-parser'
 
 import config from './config'
 import Logger from './src/utils/Logger'
@@ -12,6 +13,10 @@ import routeNumbers from './src/routes/numbers.json'
 
 const app = express();
 app.use(cors())
+// parse application/x-www-form-urlencoded
+app.use(bodyParser.urlencoded({ extended: false }))
+// parse application/json
+app.use(bodyParser.json())
 
 consign({cwd: 'src'})
   .include('controllers')

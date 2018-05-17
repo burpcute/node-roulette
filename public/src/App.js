@@ -5,7 +5,7 @@ import axios from 'axios'
 
 import Roulette from './components/roulette'
 
-import { Layout, Button } from 'antd';
+import { Layout, Button, Row, Col } from 'antd';
 const { Content } = Layout;
 
 export default class App extends Component {
@@ -16,7 +16,8 @@ export default class App extends Component {
       dataStructure: null,
       picked: [],
       playerBudget: 100,
-      roulletteBudget: 1000
+      roulletteBudget: 1000,
+      numberSpin: null
     }
   }
 
@@ -35,6 +36,34 @@ export default class App extends Component {
   }
 
   getBet = () => this.state.picked.reduce((memo, item) => memo += item.value, 0)
+
+  spin = () => {
+    axios.post('http://localhost:8080/spin', {numbers: this.state.picked})
+      .then(({data}) => {
+        if(data.win){
+          this.setState({
+            roulletteBudget: this.state.roulletteBudget - data.winAmount,
+            playerBudget: this.state.playerBudget + data.bet + data.winAmount,
+            numberSpin: `GANHOU: ${data.spin}`
+          })
+          this.clearBet();
+          if(this.state.roulletteBudget <= 0) {
+            alert('VOCE GANHOU')
+          }
+        } else {
+          this.setState({
+            roulletteBudget: this.state.roulletteBudget + data.bet,
+            playerBudget: this.state.playerBudget - data.bet,
+            numberSpin: `PERDEU: ${data.spin}`
+          })
+          this.clearBet();
+          if(this.state.playerBudget <= 0) {
+            alert('VOCE PERDEU')
+          }
+        }
+      })
+      .catch(console.error)
+  }
   
   render() {
     return (
@@ -42,7 +71,20 @@ export default class App extends Component {
         <Layout>
 
           <Content>
-            <Button className="btn-reset" type="dashed" onClick={this.clearBet}>RESET BET</Button>
+
+            <Row>
+              <Col span={8} className="flex">
+                <Button className="btn-reset" type="dashed" onClick={this.clearBet}>CLEAR</Button>
+              </Col>
+              <Col span={8} className="flex">
+                {this.state.numberSpin &&
+                  `SPIN: ${this.state.numberSpin}`
+                }
+              </Col>
+              <Col span={8} className="flex">
+                <Button className="btn-reset" type="dashed" onClick={this.spin}>SPIN</Button>
+              </Col>
+            </Row>
 
             <Roulette 
               onPick={this.onPick}

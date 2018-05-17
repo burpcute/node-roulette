@@ -4,5 +4,10 @@
     "method": "get",
     "controller": "main",
     "function": "routeMain"
+  },{
+    "path": "/spin",
+    "method": "post",
+    "controller": "main",
+    "function": "routeSpin"
   }
 ]

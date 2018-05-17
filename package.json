@@ -11,6 +11,7 @@
   "author": "Renan Inacio <renaninacio.13@gmail.com>",
   "license": "ISC",
   "dependencies": {
+    "body-parser": "^1.18.3",
     "chalk": "^2.3.2",
     "consign": "^0.1.6",
     "cors": "^2.8.4",
