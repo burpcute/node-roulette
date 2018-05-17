@@ -31,7 +31,7 @@ const routes = new BuildRoutes(app)
 routes.build(routeHelloWorld)
 routes.build(routeNumbers)
 
-app.use(express.static('public'));
+app.use(express.static('public/build'));
 
 app.listen(config.port, () => {
   app.log(`[.] Service running in localhost:${config.port}`)

@@ -1,7 +1,8 @@
+import path from 'path'
 //
 
 exports.routeMain = (req, res) => {
-  res.send('ok!')
+  res.sendFile('public/build/index.html', {root: '.'})
 }
 
 exports.routeSpin = (req, res) => {

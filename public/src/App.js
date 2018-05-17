@@ -41,6 +41,7 @@ export default class App extends Component {
     axios.post('http://localhost:8080/spin', {numbers: this.state.picked})
       .then(({data}) => {
         if(data.win){
+
           this.setState({
             roulletteBudget: this.state.roulletteBudget - data.winAmount,
             playerBudget: this.state.playerBudget + data.bet + data.winAmount,
@@ -50,7 +51,9 @@ export default class App extends Component {
           if(this.state.roulletteBudget <= 0) {
             alert('VOCE GANHOU')
           }
+          
         } else {
+
           this.setState({
             roulletteBudget: this.state.roulletteBudget + data.bet,
             playerBudget: this.state.playerBudget - data.bet,
@@ -60,6 +63,7 @@ export default class App extends Component {
           if(this.state.playerBudget <= 0) {
             alert('VOCE PERDEU')
           }
+          
         }
       })
       .catch(console.error)
